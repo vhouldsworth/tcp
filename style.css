@@ -1,0 +1,145 @@
+/* Base Styles -------------------- */
+
+body {
+  color: #5D3E3F;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+h1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.6em;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+a {
+  color: #4c2c2d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: 	#de8b8b;
+}
+
+section[role="main"] {
+  width: 90%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+  /* To make the footer stick to the bottom */
+  flex: 1;
+}
+
+/* Main Styles -------------------- */
+
+.main-header {
+  transition: padding 0.2s ease-in-out;
+  font-family: 'Orator STD', Courier, Arial, serif;
+  padding: 45px 0;
+  color: #825759;
+  line-height: 1.2;
+  background: linear-gradient(0deg, #fff, transparent 20%),
+              #F9F4EF url(img/spots.jpg) no-repeat bottom center;
+  background-size: cover;
+  position: relative;
+}
+
+.main-pics {
+  transition: margin 0.2s ease-in-out;
+  max-width: 100%;
+  height: 50vw;
+  max-height: 400px;
+  overflow: hidden;
+
+  /* For centering the images vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-pics img {
+  height: 100%;
+}
+
+.main-pics img:nth-of-type(2) {
+  height: 86%;
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Orator STD', Courier, Arial, serif;
+  font-size: .8em;
+  margin: 10px 0 0;
+  padding: 50px 0 50px;
+  background: #fefcf6;
+  color: #825759;
+}
+
+.tanias-face {
+  background: url(img/tanias-face.jpg) no-repeat center center transparent;
+  background-size: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 30px auto 10px;
+}
+
+.benefits {
+  list-style-type: none;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0;
+  font-size: 1em;
+}
+
+.pricing {
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+@media (max-width:420px) {
+  p {
+    margin-bottom: 0;
+  }
+
+  .line-in-title {
+    display: none;
+  }
+}
+
+@media (min-width: 420px) {
+    .main-header {
+      padding: 90px 0;
+    }
+
+    .main-pics {
+      margin: 20px auto;
+    }
+
+    .pricing {
+      padding: 20px;
+    }
+
+    .tanias-face {
+      margin: 30px auto;
+    }
+}
