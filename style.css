@@ -1,24 +1,29 @@
 /* Base Styles -------------------- */
 
 body {
-  color: #5D3E3F;
+  color: #2F3529;
   margin: auto;
   text-align: center;
   font-size: 1em;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Ruda', Helvetica, Arial, sans-serif;
   font-weight: 400;
   background-color: #fff;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-weight: 400;
 }
 
 h1 {
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 1.6em;
-  font-weight: lighter;
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 p {
@@ -51,12 +56,11 @@ section[role="main"] {
 
 .main-header {
   transition: padding 0.2s ease-in-out;
-  font-family: 'Orator STD', Courier, Arial, serif;
+  font-family: 'Ruda', Courier, Arial, serif;
   padding: 45px 0;
-  color: #825759;
+  color: #8A7E85;
   line-height: 1.2;
-  background: linear-gradient(0deg, #fff, transparent 20%),
-              #F9F4EF url(img/spots.jpg) no-repeat bottom center;
+  background: url(img/spots.jpg) no-repeat bottom center;
   background-size: cover;
   position: relative;
 }
@@ -82,16 +86,6 @@ section[role="main"] {
   height: 86%;
 }
 
-.footer {
-  text-align: center;
-  font-family: 'Orator STD', Courier, Arial, serif;
-  font-size: .8em;
-  margin: 10px 0 0;
-  padding: 50px 0 50px;
-  background: #fefcf6;
-  color: #825759;
-}
-
 .tanias-face {
   background: url(img/tanias-face.jpg) no-repeat center center transparent;
   background-size: cover;
@@ -114,6 +108,16 @@ section[role="main"] {
   list-style-type: none;
   text-align: center;
   line-height: 1.5em;
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Ruda', Courier, Arial, serif;
+  font-size: .8em;
+  margin: 10px 0 0;
+  padding: 50px 0 50px;
+  background: #fff7e7;
+  color: #8A7E85;
 }
 
 @media (max-width:420px) {
